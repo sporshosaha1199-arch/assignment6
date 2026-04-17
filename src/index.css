@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-primary: #4F39F6;
+  --color-primary-content: #ffffff;
+  --color-secondary: #627382;
+  --color-accent: #A78BFA;
+  --color-slate-900: #101727;
+}
+
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #101727;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4F39F6 0%, #9333EA 100%) !important;
+  border: none !important;
+  color: white !important;
+  @apply hover:opacity-90 transition-all shadow-lg shadow-primary/20;
+}
+
+.bg-linear {
+  background: linear-gradient(135deg, #4F39F6 0%, #9333EA 100%);
+}
